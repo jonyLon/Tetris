@@ -28,7 +28,7 @@ class Shaper {
 		2,3,4,5, // O
 	};
 	int index;
-	int partTexture[4] = { 0,0,18,18 };
+	int partTexture[4] = { 0, 0, 18, 18 };
 public:
 	int color_num = index + 1;
 	Point p[4], previous[4]{0};
@@ -304,8 +304,10 @@ int main()
 					Shaper new_shaper = ShapeFactory::createShape();
 					shape = &new_shaper;
 					app.selectSprite(shape->getPartTexture());
+					delay = 0.3;
 			}
 			timer = 0;
+			
 		}
 		app.remove_line();
 
